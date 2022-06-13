@@ -1,11 +1,18 @@
-import oracle.jdbc.OracleConnection;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.Properties;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import java.sql.*;
-import java.util.Properties;
+import lombok.extern.slf4j.Slf4j;
+import oracle.jdbc.OracleConnection;
 
+@Slf4j
 @SpringBootApplication
 public class Main {
 
